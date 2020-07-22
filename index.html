@@ -1,0 +1,142 @@
+<!--
+   File: GUI_HW_4.html
+   91.461 Assignment: Creating Your First Web Page
+   Corina Mangione, UMass Lowell Computer Science, corina_mangione@student.uml.edu
+   Copyright (c) 2020 by Corina Mangione. All rights reserved. May be
+   freely
+   copied or excerpted for educational purposes with credit to the
+   author.
+   updated by Corina Mangione on July 22, 2020
+   -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap 101 Template</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   </head>
+   <body>
+      <!-- Creates a jubotron with my name, used this resource: https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_container_color&stacked=h -->
+      <div class="container p-3 my-3 bg-dark text-white">
+         <div class = "jumbotron">
+            <header class = "text-info">
+               <h1 class = "text-center" > Corina Mangione </h1>
+            </header>
+         </div>
+      </div>
+      <!-- Education Section gives background on education-->
+      <div class="container">
+         <div class="row">
+            <div class = "col-sm-4" >
+               <h2  class = "text-info"> Education </h2>
+               <p >
+                  I am a currently a computer science student at University of Massachusetts Lowell. I transferred to UMASS Lowell from Bunker Hill Community College. Please click <a href = "https://www.uml.edu/Catalog/Undergraduate/Sciences/Departments/Computer-Science/Degree-pathways/DP-CS-General-2020.aspx"> Here </a> to learn more about the Computer Science curriculum at UMass Lowell.
+               </p>
+            </div>
+            <div class = "background-color col-sm-4">
+               <!-- Project Section -->
+               <h2  class = "text-info"> Projects </h2>
+               <!-- Used this resource for help with the table https://stackoverflow.com/questions/3337914/how-can-i-make-a-link-from-a-td-table-cell
+                  and also used this resource for adding the button in the table https://mdbootstrap.com/snippets/jquery/jay_skyworker/557084
+                     Creates table with dead links for project-->
+               <div class="table-responsive">
+                  <table class = "table table-condensed table-striped" >
+                     <tr class = "info">
+                        <th> Project Name
+                        <th>
+                        <th> Description
+                        <th>
+                        <th> Project Link
+                        <th>
+                     </tr>
+                     <tr>
+                        <td> Project 1 Name place holder
+                        <td>
+                        <td> Project 1 Description place holder
+                        <td>
+                        <td>  <a class="btn btn-primary " href="/">Link place holder</a>
+                        <td>
+                     </tr>
+                     <tr>
+                        <td> Project 2 Name place holder
+                        <td>
+                        <td> Project 2 Description place holder
+                        <td>
+                        <td>  <a class="btn btn-primary " href="/">Link place holder</a>
+                        <td>
+                     </tr>
+                     <tr>
+                        <td> Project 3 Name place holder
+                        <td>
+                        <td> Project 3 Description place holder
+                        <td>
+                        <td>  <a class="btn btn-primary " href="/">Link place holder</a>
+                        <td>
+                     </tr>
+                     <tr >
+                        <td> Project 4 Name place holder
+                        <td>
+                        <td> Project 4 Description place holder
+                        <td>
+                        <td>  <a class="btn btn-primary " href="/">Link place holder</a>
+                        <td>
+                     </tr>
+                     <tr>
+                        <td> Project 5 Name place holder
+                        <td>
+                        <td> Project 5 Description place holder
+                        <td>
+                        <td>  <a class="btn btn-primary " href="/">Link place holder</a>
+                        <td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <!-- Creates section for languages -->
+            <div class = "background-color col-sm-4">
+               <h2 class = "text-info" > Languages </h2>
+               <!-- Creates a list group -->
+               <h3 class = "text-success" > I currently know these languages: </h3>
+               <ul class = "list-group">
+                  <li class = "list-group-item"> C++ </li>
+                  <li class = "list-group-item" > Java </li>
+                  <li class = "list-group-item"> Python </li>
+                  <li class = "list-group-item"> R </li>
+               </ul>
+               <!-- Creates a list group -->
+               <h3 class = "text-danger"> I am in the process of learning: </h3>
+               <ul class = "list-group">
+                  <li class = "list-group-item"> HTML </li>
+                  <li class = "list-group-item"> CSS </li>
+                  <li class = "list-group-item"> JavaScript </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Creates a form for someone to contact me used this video for the form https://www.youtube.com/watch?v=5GcQtLDGXy8&feature=youtu.be
+         I also used this resource for the form https://getbootstrap.com/docs/4.0/components/forms/-->
+      <div class = "container">
+         <h2 class = "text-info"> Contact Me </h2>
+         <form>
+            <div class = "form-group">
+               <label> Name </label>
+               <input type = "text" class ="form-control" placeholder="Add Name" >
+            </div>
+            <div class = "form-group">
+               <label> Email </label>
+               <input type = "text" class ="form-control" placeholder="Add Email" >
+            </div>
+            <div class = "form-group">
+               <label> Message </label>
+               <textarea  class ="form-control" placeholder="Add Message" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+      </div>
+   </body>
+</html>
